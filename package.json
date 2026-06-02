@@ -1,0 +1,24 @@
+{
+  "name": "urban-broccoli",
+  "version": "1.0.0",
+  "description": "A resume builder all locally stored on your machine",
+  "homepage": "https://github.com/squishedfox/urban-broccoli#readme",
+  "bugs": {
+    "url": "https://github.com/squishedfox/urban-broccoli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squishedfox/urban-broccoli.git"
+  },
+  "license": "GNUv3",
+  "author": "squishedfox",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "42.3.0"
+  }
+}
