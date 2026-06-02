@@ -7,3 +7,6 @@ contextBridge.exposeInMainWorld("versions", {
   ping: () => ipcRenderer.invoke("ping"),
   // we can also expose variables, not just functions
 });
+contextBridge.exposeInMainWorld("electron", {
+  startDrag: (fileName) => ipcRenderer.send("ondragstart", fileName),
+});

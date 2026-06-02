@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,35 @@
     <title>Hello from Electron renderer!</title>
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
+    <h1>Hello World!</h1>
+    <p>
+      Drag the boxes below to somewhere in your OS (Finder/Explorer, Desktop,
+      etc.) to copy an example markdown file.
+    </p>
+    <div
+      style="
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline-block;
+      "
+      draggable="true"
+      id="drag1"
+    >
+      Drag me - File 1
+    </div>
+    <div
+      style="
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 5px;
+        display: inline-block;
+      "
+      draggable="true"
+      id="drag2"
+    >
+      Drag me - File 2
+    </div>
+    <script src="renderer.js"></script>
   </body>
 </html>
